@@ -31,8 +31,12 @@ nav{
 	border:solid 1px #cccccc;
 }
 nav li{
+	margin-bottom: 5px;
+}
+nav ul{
 	float: left;
-	margin:20px 50px;
+	display: block;
+	margin: 20px 50px 20px 40px;
 }
 li{
 	list-style-type: none;
@@ -71,6 +75,41 @@ footer{
 	margin: auto;
 	border:solid 1px red;
 }
+.dropdown{
+	display:inline-block;
+	width:999px;
+	height:160px;
+}
+.dropdown1{
+	display:block;
+	margin-top:10px;
+}
+.dropdownContents{
+	display:none;
+	background-color:#ffffff;
+	position: absolute;
+	width:auto;
+	padding: auto;
+	margin: 10px 0px 0px 0px;
+	font-size: 12px;
+}
+.dropdownContents1{
+	display:none;
+	background-color:#ff00ff;
+	position: absolute;
+	width:100px;
+	padding: auto;
+	margin: auto;
+	font-size: 12px;
+}
+.dropdown:hover .dropdownContents{
+	display: block;
+}
+.dropdown:hover{
+	background-color: #fff;
+}
+.dropdown1:hover .dropdownContents1{
+	display: block;
 </style>
 </head>
 <body>
@@ -85,13 +124,40 @@ footer{
 	</header>
 	<div class="clear"></div>
 	<nav>
-		<ul>
+		<div class="dropdown">
+		<ul>여행주간이란?
+		<div class="dropdownContents">
 			<li>여행주간이란?</li>
-			<li>여행주간프로그램</li>
-			<li>여행정보</li>
-			<li>특별혜택</li>
-			<li>이벤트</li>
+			<li>참여기관모집</li>
+		</div>
 		</ul>
+		<ul>여행주간 프로그램
+		<div class="dropdownContents">
+			<li>테마여행</li>
+			<li>지역여행</li>
+		</div>
+		</ul>
+		<ul>여행정보
+		<div class="dropdownContents">
+			<li>취향여행 20선</li>
+			<li>지역 축제/행사</li>
+			<li>추천여행정보</li>
+			<li>유용한 여행 사이트</li>
+		</div>
+		</ul>
+		<ul>특별혜택
+		<div class="dropdownContents">
+			<li>핵심할인혜택</li>
+			<li>공공할인혜택</li>
+		</div>
+		</ul>
+		<ul>이벤트
+		<div class="dropdownContents">
+			<li>진행중인 이벤트</li>
+			<li>종료된 이벤트</li>
+			</div>
+		</ul>
+		</div>
 	</nav>
 	<div class="clear"></div>
 	<section>
@@ -101,8 +167,27 @@ footer{
 		<ul>
 			<li>마을여행</li>
 			<li>핵심혜택</li>
-			<li>이벤트</li>
-			<li>대한민국 구석구석</li>
+		</ul>
+		<div class="dropdown1">
+			<ul>이벤트
+		<div class="dropdownContents1">
+				<li>진행중인 이벤트</li>
+				<li>종료된 이벤트</li>
+		</div>
+			</ul>
+		</div>
+		<div class="dropdown1">	
+			<ul>대한민국 구석구석
+		<div class="dropdownContents1">
+				<li>서울</li>
+				<li>부산</li>
+				<li>대구</li>
+				<li>대전</li>
+				<li>광주</li>
+				<li>울산</li>
+		</div>
+			</ul>
+		</div>
 		</ul>
 	</aside>
 	<section class="clear">
