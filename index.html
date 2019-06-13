@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>경기도 투어</title>
 <style>
 *{
 	padding: 0;
@@ -13,6 +13,9 @@ body{
 	}
 .clear{
 	clear: both;
+}
+h5{
+	color: gray;
 }
 header{
 	height: 30px;
@@ -39,88 +42,14 @@ nav ul{
 	margin: 20px 120px 20px 120px;
 	font-size: 20px;
 }
+.main{
+	text-align: center;
+	margin-bottom: 100px;
+}
 .smalllogo{
 	float: right;
 	margin-top: -50px;
 	margin-right: 50px;
-}
-.dmz1{
-	width: 1214px;
-	height: 200px;
-	background-image: url(./img/dmz.png);
-	transition: height 0.5s;
-}
-.dmz1:hover {
-	width: 1214px;
-	height: 650px;
-	background-image: url(./img/dmz.png);
-	font-size: 30px;
-	transition-delay: 0.5s;
-}
-.dmz2{
-	width: 1214px;
-	height: 200px;
-	background-image: url(./img/dmz2.png);
-	transition: height 0.5s;
-}
-.dmz2:hover {
-	width: 1214px;
-	height: 650px;
-	background-image: url(./img/dmz2.png);
-	font-size: 30px;
-	transition-delay: 0.5s;
-}
-.dmz3{
-	width: 1214px;
-	height: 200px;
-	background-image: url(./img/dmz3.png);
-	transition: height 0.5s;
-}
-.dmz3:hover {
-	width: 1214px;
-	height: 650px;
-	background-image: url(./img/dmz3.png);
-	font-size: 30px;
-	transition-delay: 0.5s;
-}
-.dmz4{
-	width: 1214px;
-	height: 218px;
-	background-image: url(./img/dmz4.png);
-	transition: height 0.5s;
-}
-.dmz4:hover {
-	width: 1214px;
-	height: 650px;
-	background-image: url(./img/dmz4.png);
-	font-size: 30px;
-	transition-delay: 0.5s;
-}
-.dmz5{
-	width: 1214px;
-	height: 200px;
-	background-image: url(./img/dmz5.png);
-	transition: height 0.5s;
-}
-.dmz5:hover {
-	width: 1214px;
-	height: 650px;
-	background-image: url(./img/dmz5.png);
-	font-size: 30px;
-	transition-delay: 0.5s;
-}
-.dmz6{
-	width: 1214px;
-	height: 200px;
-	background-image: url(./img/dmz6.png);
-	transition: height 0.5s;
-}
-.dmz6:hover {
-	width: 1214px;
-	height: 650px;
-	background-image: url(./img/dmz6.png);
-	font-size: 30px;
-	transition-delay: 0.5s;
 }
 li{
 	list-style-type: none;
@@ -162,6 +91,9 @@ footer{
 	margin-left: 300px;
 	margin-top:10px;
 }
+.tema{
+	text-align: center;
+}
 </style>
 </head>
 <body>
@@ -188,16 +120,6 @@ footer{
 		</ul>
 	</div>
 	<div class="dropdown">
-		<ul><h3>투어</h3>
-			<div class="dropdowncontents">
-			<li>수원 화성 투어</li>
-			<li>광명 동굴 투어</li>
-			<li>DMZ 스파이 투어</li>
-			<li>가평 호수마을 투어</li>
-		</div>
-		</ul>
-	</div>
-	<div class="dropdown">
 		<ul><h3>대여</h3>
 		<div class="dropdowncontents">
 			<li>레일 바이크</li>
@@ -211,6 +133,10 @@ footer{
 		</ul>
 	</div>
 	<div class="dropdown">
+		<ul><a href="tour.html"><h3>투어</h3></a>
+		</ul>
+	</div>
+	<div class="dropdown">
 		<ul><a href="reservation.html"><h3>예약</h3></a>
 		</ul>
 	</div>
@@ -220,28 +146,14 @@ footer{
 <a href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fggtour.or.kr%2Fenjoy%2Fhundred.php%3Ftsort%3D2%26msort%3D10&url=undefined&original_referer="><img src="./img/twi.png"></a>
 <a href="https://accounts.kakao.com/login/kakaostory?continue=https%3A%2F%2Fstory.kakao.com%2Fshare%3Furl%3Dhttps%253A%252F%252Fggtour.or.kr%252Fenjoy%252Fhundred.php%253Ftsort%253D2%2526msort%253D10"><img src="./img/kakao.png"></a>
 </div>
-<img src="./img/main.png" width="100%">
+<img src="./img/main2.png" width="100%">
 </div>
-<h2>인기있는 투어</h2>
-<div id="maintext">
-	<section class="dmz1">
-		<a href="trip1.html"><img src="./img/text1.png"></a>
-	</section>
-	<section class="dmz2">
-<img src="./img/text2.PNG">
-</section>
-<section class="dmz3">
-<img src="./img/text3.png">
-</section>
-<section class="dmz4">
-<img src="./img/text4.png">
-</section>
-<section class="dmz5">
-<img src="./img/text5.png">
-</section>
-<section class="dmz6">
-<img src="./img/text6.png">
-</section>
+<div class="main">
+	<h2>경기도 소개</h2>
+	<h5>여행지기들이 추천하는 경기도의 그곳!</h5>
+<img src="./img/map.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="./img/map1.png">
 </div>
 <footer>
 	<div id="foo">
